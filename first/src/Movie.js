@@ -5,6 +5,7 @@ function Movie(props) {
       <img src={props.link} alt=""/>
       <h2>{props.title}</h2>
     </div>
-  );
+  )
 }
 export default Movie;
+//hello
