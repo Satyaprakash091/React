@@ -15,12 +15,21 @@ function Movies() {
   ]
   return (
     <div className="movies">
-      <Movie link={movieLinks[0]} title={titles[0]}/>
-      <Movie link={movieLinks[1]} title={titles[1]}/>
-      <Movie link={movieLinks[2]} title={titles[2]}/>
-      <Movie link={movieLinks[3]} title={titles[3]}/>
-      <Movie link={movieLinks[4]} title={titles[4]}/>
+      {
+        movieLinks.map((links,index)=>
+        (
+          <Movie link={links} title={titles[index]} key={index}/>
+        ))
+      }
     </div>
+
+    // <div className="movies">
+    //   <Movie link={movieLinks[0]} title={titles[0]}/>
+    //   <Movie link={movieLinks[1]} title={titles[1]}/>
+    //   <Movie link={movieLinks[2]} title={titles[2]}/>
+    //   <Movie link={movieLinks[3]} title={titles[3]}/>
+    //   <Movie link={movieLinks[4]} title={titles[4]}/>
+    // </div>
   );
 }
 export default Movies;
