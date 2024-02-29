@@ -1,0 +1,12 @@
+img{
+    height: 150px;
+    width: 150px;
+}
+.movies{
+    display: flex;
+    gap: 20px;
+}
+.movie{
+    padding: 40px;
+    box-shadow: 5px 5px 5px black;
+}
