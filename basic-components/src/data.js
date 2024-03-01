@@ -1,28 +1,28 @@
 const moviesData = [
   {
-    image:
-      "https://m.media-amazon.com/images/M/MV5BODUwNDNjYzctODUxNy00ZTA2LWIyYTEtMDc5Y2E5ZjBmNTMzXkEyXkFqcGdeQXVyODE5NzE3OTE@._V1_.jpg",
+    image: "../../public/assets/rrr.jpg",
     title: "RRR",
+    rating: 9.4,
   },
   {
-    image:
-      "https://m.media-amazon.com/images/M/MV5BZDNlNzBjMGUtYTA0Yy00OTI2LWJmZjMtODliYmUyYTI0OGFmXkEyXkFqcGdeQXVyODIwMDI1NjM@._V1_FMjpg_UX1000_.jpg",
+    image: "../../public/assets/kgf.jpg",
     title: "KGF",
+    rating: 9.2
   },
   {
-    image:
-      "https://m.media-amazon.com/images/M/MV5BZDQ5YjAxMmYtOGM3Zi00MWU2LWJmOTMtZjhhYjkyNGQ1NjE3XkEyXkFqcGdeQXVyMTA3MDk2NDg2._V1_.jpg",
+    image: "../../public/assets/RadheShyam.jpg",
     title: "Radhe Shyam",
+    rating: 5.6
   },
   {
-    image:
-      "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRtqOcKrGdAkkd4sd0o99QcS747hUAaXZKaNjxws47K2q55Rqukiobt3BqAUnV7n8vyrj8NrQ",
+    image: "../../public/assets/Tiger3.jpg",
     title: "Tiger3",
+    rating: 8.9
   },
   {
-    image:
-      "https://m.media-amazon.com/images/M/MV5BMDdlODdmODItZDAxNi00MjExLWFjOGItMGY3MzFjYzU4NDM3XkEyXkFqcGdeQXVyMTUzNTgzNzM0._V1_FMjpg_UX1000_.jpg",
+    image: "../../public/assets/Yodha.jpg",
     title: "Yodha",
+    rating: 9.0
   },
 ];
 export default moviesData;

@@ -11,7 +11,7 @@
 // export default App
 
 import { Component } from "react";
-import Movies from "./Movies";
+import Movies from "./components/Movies";
 
 class App extends Component {
   render() {
