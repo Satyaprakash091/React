@@ -1,0 +1,33 @@
+.books{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 20px 0;
+}
+.book{
+    text-align: center;
+
+}
+img{
+    height: 300px;
+    width: 210px;
+    border: 2px solid rgb(32, 32, 32);
+    padding: 10px;
+    box-shadow: 5px 5px 5px rgb(79, 78, 78);
+    transition: 1s ease;
+}
+img:hover{
+    box-shadow: 8px 8px 8px rgb(79, 78, 78);
+    transform: scale(1.05);
+    transition: 1s ease;
+    cursor: pointer;
+}
+.heading{
+    text-transform: capitalize;
+    text-align: center;
+    text-decoration: underline;
+    
+}
+.price{
+    font-size: 18px;
+    background-color: rgb(171, 226, 226);
+}
