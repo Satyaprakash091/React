@@ -1,0 +1,17 @@
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: aquamarine;  
+}
+p{
+    font-size: 48px;
+}
+button{
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border-radius: 15px;
+    margin: 20px;
+}
