@@ -5,7 +5,7 @@ function Books({type})
 {
   return(
     <div>
-      <h1 class="heading">{type} Books</h1>
+      <h1 className="heading">{type} Books</h1>
       <div className="books">
         {
           booksData[type].map((book,index)=>
