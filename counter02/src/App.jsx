@@ -9,12 +9,18 @@ function App()
     {
       setCount(count+1);
     }
+    else{
+      window.alert("Counter value should not be more than 25");
+    }
   }
   function dec()
   {
     if(count>0)
     {
       setCount(count-1);
+    }
+    else{
+      window.alert("Counter value should not be less than 0");
     }
   }
   return(
