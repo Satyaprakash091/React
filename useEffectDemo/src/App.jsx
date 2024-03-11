@@ -3,6 +3,7 @@ import './App.css'
 
 function App() {
   const [products,setProducts]=useState([])
+  const[count,setCount]=useState(0);
  useEffect(() =>
   {
    fetch("https://fakestoreapi.com/products")
@@ -12,11 +13,14 @@ function App() {
   },[])
   return (
 		<div>
-			<h1>use Effect Demo- fetching products</h1>
-			<div style={{ display: "grid", gridTemplateColumns: "repeat(3,1fr)" }}>
+			<div className='header'>
+				<h2>My Shopping Application</h2>
+				<h4 className='count'>Items : {count}</h4>
+			</div>
+			<h1><u> Accessories</u></h1>
+			<div className='items'>
 				{products.map((pr, index) => (
-					<div
-						style={{ boxShadow: "5px 5px 5px black" }}
+					<div className='item'
 						key={index}>
 						<img
 							src={pr.image}
@@ -24,7 +28,8 @@ function App() {
 							height='100'
 							width='100'
 						/>
-						<h2>{pr.title}</h2>
+						<h2 className='title'>{pr.title}</h2>
+						<button className='btn' onClick={()=>setCount(count+1)}>Add To Cart</button>
 					</div>
 				))}
 			</div>
