@@ -1,0 +1,31 @@
+.moviesList{
+    background-color: rgb(252, 229, 204);
+}
+.heading{
+    color: rgb(65, 193, 193);
+    margin: 0;
+    padding: 10px;
+}
+.movies{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    background-color: rgb(255, 245, 234);
+}
+img{
+    margin-top: 20px;
+    height: 285px;
+    width: 210px;
+}
+h3{
+    color: rgb(80, 192, 192);
+}
+.movie{
+    box-shadow: 5px 5px 5px rgb(90, 88, 88);
+    margin: 15px;
+    transition: 0.5s;
+    background-color: white;
+}
+.movie:hover{
+    box-shadow: 10px 10px 10px black;
+    transition: 0.5s;
+}
