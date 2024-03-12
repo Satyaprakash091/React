@@ -11,6 +11,9 @@
     grid-template-columns: repeat(4,1fr);
     background-color: rgb(255, 245, 234);
 }
+a{
+    text-decoration: none;
+}
 img{
     margin-top: 20px;
     height: 285px;

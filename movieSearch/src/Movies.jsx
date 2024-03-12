@@ -12,9 +12,10 @@ const Movies = ({moviesList,searchTerm,change}) => {
         {moviesList && moviesList.map((movie,index)=>(
             <div className='movie' key={index}>
                 <img src={movie.Poster} alt={movie.Title}/>
-                <h3>{movie.Title}</h3>
+                <a href={`https://www.imdb.com/title/${movie.imdbID}`}><h3>{movie.Title}</h3></a>
                 <h4>Released Year : {movie.Year}</h4>
                 <h5>Type : {movie.Type}</h5>
+                <p>{movie.imdbID}</p>
             </div>
         ))}
         </div>
