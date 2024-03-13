@@ -37,7 +37,7 @@ function App() {
   return (
     <>
       <div className="quotation">
-        <h1 className="heading"><u>Daily Quotes</u></h1>
+        <h1 className="heading"><u>Random Quote Generator</u></h1>
         <blockquote className="quote">{quote}</blockquote>
         <cite className="author">{author}</cite><br/>
         <button className="btn" onClick={() => setbtnClick(btnClick + 1)}>Refresh</button>
