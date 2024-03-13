@@ -4,6 +4,10 @@
   margin: 10px 0;
   position: relative;
 }
+.savedQuote{
+    font-family:'Courier New', Courier, monospace;
+    color: rgb(21, 36, 36) ;
+}
 .rbtn {
   position: absolute;
   top: 0;

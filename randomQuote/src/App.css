@@ -7,9 +7,11 @@
   padding: 30px;
 }
 .quote{
+  background-color:burlywood;
   font-size: 25px;
   font-weight: 600;
   color:rgb(0, 87, 0);
+  font-family:'Courier New', Courier, monospace;
 }
 .author{
   font-size: 18px;
