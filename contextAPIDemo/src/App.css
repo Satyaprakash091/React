@@ -1,0 +1,12 @@
+.box{
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%,-50%);
+  background-color: aquamarine;
+  text-align: center;
+}
+.btn{
+  margin: 3px;
+  padding: 8px 15px;
+}
