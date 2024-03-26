@@ -52,7 +52,7 @@ const App = () => {
       <p>Count2 : {count2}</p>
       <button onClick={handleCount}>Button1</button>
       <button onClick={()=>setCount2((prev)=>prev+2)}>Button2</button>
-      <Child>Hi</Child>
+      <Child>Hi</Child> 
       <input type="text" ref={inputRef}/>
       <button onClick={()=>setCount2(inputRef.current.value)}>click</button>
       <p>{fact}</p>
