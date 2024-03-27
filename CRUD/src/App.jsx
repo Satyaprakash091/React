@@ -1,26 +1,14 @@
-import React, { useState } from 'react'
-import './App.css'
-import Movies from './Movies'
+// App.js
+import React from "react"
+import Movies from "./Movies"
+import { MovieProvider } from "./MovieContext"
 
 const App = () => {
-  const[formOpen,setFormOpen]=useState(false);
-  const openForm=()=>
-  {
-    setFormOpen(true)
-  }
-  const closeForm=()=>
-  {
-    setFormOpen(false)
-  }
-  return (
-   <>
-   <button className='p-5 bg-neutral-50 text-black hover:bg-blue-300 hover:text-white
-   ' onClick={openForm}>Add New</button>
-     <div className='p-5 bg-black text-white'>
-      <Movies formOpen={formOpen} closeForm={closeForm}/>
-    </div>
-   </>
-  )
+	return (
+		<MovieProvider>
+				<Movies />
+		</MovieProvider>
+	)
 }
 
 export default App

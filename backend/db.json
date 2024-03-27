@@ -1,23 +1,28 @@
-{    
-     "movies":[
-        {
-            "id":"1",
-            "Title":"Pursuit of Happiness",
-            "Poster":"https://upload.wikimedia.org/wikipedia/en/8/81/Poster-pursuithappyness.jpg",
-            "Year":1998
-        },
-        {
-            "id":"2",
-            "Title":"Salaar",
-            "Poster":"https://upload.wikimedia.org/wikipedia/en/a/a6/Salaar_Part_1_%E2%80%93_Ceasefire.jpg",
-            "Year":2023
-        },
-        {
-            "id":"3",
-            "Title":"RRR",
-            "Poster":"https://upload.wikimedia.org/wikipedia/en/d/d7/RRR_Poster.jpg",
-            "Year":2023
-        } 
-    ]
+{
+  "movies": [
+    {
+      "id": "1",
+      "Title": "Pursuit of Happiness",
+      "Poster": "https://upload.wikimedia.org/wikipedia/en/8/81/Poster-pursuithappyness.jpg",
+      "Year": 1998
+    },
+    {
+      "id": "2",
+      "Title": "Salaar",
+      "Poster": "https://upload.wikimedia.org/wikipedia/en/a/a6/Salaar_Part_1_%E2%80%93_Ceasefire.jpg",
+      "Year": 2023
+    },
+    {
+      "id": "3",
+      "Title": "RRR",
+      "Poster": "https://upload.wikimedia.org/wikipedia/en/d/d7/RRR_Poster.jpg",
+      "Year": 2023
+    },
+    {
+      "id": "4",
+      "Title": "Jawan",
+      "Poster": "https://upload.wikimedia.org/wikipedia/en/3/39/Jawan_film_poster.jpg",
+      "Year": 2023
+    }
+  ]
 }
-
