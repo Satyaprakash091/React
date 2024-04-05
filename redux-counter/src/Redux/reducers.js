@@ -17,7 +17,7 @@ const reducer1=(state=initialState,action)=>
                 ...state,count:state.count-1
             }
         default:
-            return stamountate;
+            return state;
     }
 }
 const reducer2=(state=initialState,action)=>
@@ -32,6 +32,8 @@ const reducer2=(state=initialState,action)=>
             return{
                 ...state,count2:state.count2-action.amount
             }
+        default:
+            return state;
     }
 }
 const reducer=combineReducers({c1:reducer1,c2:reducer2})

@@ -4,8 +4,8 @@ import { add,subtract } from './Redux/actions'
 import {useDispatch} from 'react-redux'
 import {useSelector} from 'react-redux'
 const Counter = () => {
-    const count=useSelector((state)=>state.count)
-    const count2=useSelector((state)=>state.count2)
+    const count=useSelector((state)=>state.c1.count)
+    const count2=useSelector((state)=>state.c2.count2)
     const dispatch=useDispatch()
   return (
     <div>
