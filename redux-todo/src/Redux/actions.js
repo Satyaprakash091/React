@@ -6,13 +6,13 @@ export const ADDTODO=(id,text)=>
         data:text
     }
 )
-// export const DELETETODO=(id)=
-// (
-//     {
-//         type:"DELETE",
-//         id:id
-//     }
-// )
+export const DELETETODO=(id)=>
+(
+    {
+        type:"DELETE",
+        id:id
+    }
+)
 // export const Togle=(id)=>
 // (
 //     {

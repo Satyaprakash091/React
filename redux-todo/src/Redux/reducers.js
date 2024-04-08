@@ -11,6 +11,8 @@ const toDoReducer=(state=initialState,action)=>
                 id:action.id,
                 text:action.data
             }]}
+        case "DELETE":
+            return{...state,todos:state.todos.filter((t)=>t.id!=action.id)}
         default:
             return state;
     }
