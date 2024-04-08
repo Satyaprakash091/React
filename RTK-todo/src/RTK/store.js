@@ -9,8 +9,6 @@ const todoSlice=createSlice({
         },
         deleteToDo:(state,action)=>
         {
-            
-            console.log(action.payload)
             return state.filter((todo)=>todo.id!=action.payload)
         }
     }
