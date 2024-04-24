@@ -1,8 +1,9 @@
 import React from "react";
 import { useSelector } from "react-redux";
-import {Link} from 'react-router-dom'
+import {Link,useNavigate} from 'react-router-dom'
 
 const Header = () => {
+  const navigate=useNavigate()
   const cart=useSelector((state) => state.products.cart)
   return (
     <header className="text-gray-600 body-font">
@@ -16,22 +17,20 @@ const Header = () => {
           <Link to='/about' className="mr-5 hover:text-gray-900">About</Link>
           <Link to='/products' className="mr-5 hover:text-gray-900">Products</Link>
           <Link to='/contact' className="mr-5 hover:text-gray-900">Contact</Link>
-        </nav>
-        <Link to='/cart'>
-        <button className="inline-flex items-center bg-gray-100 border-0 py-1 px-3 mx-1 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">
+          <Link to='/cart'>
+        <button className="inline-flex items-center bg-gray-100 border-0 py-1 px-3 mx-1 focus:outline-none hover:bg-gray-200 rounded text-base md:mt-0">
           Cart : {cart.length}
         </button>
         </Link>
         <Link to='/signup'>
-        <button className="inline-flex items-center bg-gray-100 border-0 py-1 px-3 mx-1 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">
-          SignUp
+        <button className="inline-flex items-center bg-gray-100 border-0 py-1 px-3 mx-1 focus:outline-none hover:bg-gray-200 rounded text-base md:mt-0">
+          Sign Up
         </button>
         </Link>
-        <Link to='/login'>
-        <button className="inline-flex items-center bg-gray-100 border-0 py-1 px-3 mx-1 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">
+        <button className="inline-flex items-center bg-gray-100 border-0 py-1 px-3 mx-1 focus:outline-none hover:bg-gray-200 rounded text-base md:mt-0" onClick={()=>navigate('/login')}>
           Login
         </button>
-        </Link>
+        </nav>
         
       </div>
     </header>

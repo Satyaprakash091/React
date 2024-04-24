@@ -3,7 +3,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { auth } from "../firebase";
 import { clearError, setError, setLoading } from "../Redux/store";
 import { signInWithEmailAndPassword } from "firebase/auth";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const Login = () => {
   const [email, setEmail] = useState("");
@@ -116,6 +116,14 @@ const Login = () => {
                 >
                   Login
                 </button>
+                <p className="text-sm font-light text-gray-500 dark:text-gray-400">
+                  Not Registered Yet? {" "}
+                  <Link to='/signup'
+                    className="font-medium text-primary-600 hover:underline dark:text-primary-500"
+                  >
+                    Signup here
+                  </Link>
+                  </p>
               </form>
             </div>
           </div>
